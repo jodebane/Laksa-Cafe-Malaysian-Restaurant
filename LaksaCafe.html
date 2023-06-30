@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" href="laksacafestylesheet.css"></head>
+<body>
+
+<h1>Laksa Cafe Malaysian Restaurant</h1>
+
+<div class ="buttondisplay">
+
+<button class="mainbutton" id ="aboutbtn">
+   About
+</button>
+
+<button class="mainbutton" id = "menubtn">
+   Menu
+</button>
+
+<button class="mainbutton" id = "locationbtn">
+   Location
+</button>
+
+<button class="mainbutton" id= "contactbutton">
+   Contact
+</button>
+
+
+</div>
+
+<div id="maindisplay">
+   <p>This is a restaurant located in Cheyfield, United Kingdom.</p>
+      <p>We have been serving an eclectic variety of Malaysian dishes since 2011.</p>
+     
+      <p>We have a 4-star average rating on tripadvisor and were given the "Cheyfield's Best" restaurant award in 2014.</p>      
+      <br>
+   </p>
+
+
+</div>
+
+<script>
+
+
+document.getElementById('locationbtn').addEventListener("click", displaylocation)
+document.getElementById('aboutbtn').addEventListener("click", displayabout)
+
+
+
+function displaylocation(){
+
+   document.getElementById("maindisplay").innerHTML=
+   '<p> This restaurant is located at 217 Chesterfield Road, Cheyfield, United Kingdom </p>'+
+   '<p> You can find directions with google maps </p>'
+}
+
+function displayabout(){
+   document.getElementById("maindisplay").innerHTML=
+   '<p>This is a restaurant located in Cheyfield, United Kingdom.</p>'+
+      '<p> We have been serving an eclectic variety of Malaysian dishes since 2011.</p>'+
+       
+      '<p>We have a 4-star average rating on tripadvisor and were given the Cheyfields Best restaurant award in 2014. </p>'    
+
+}
+
+
+
+</script>
+
+</body>
+</html>
